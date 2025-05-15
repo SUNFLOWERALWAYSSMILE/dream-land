@@ -10,40 +10,80 @@ body{
     'main1 main2 main3'
    
     'text  text text'
-    'main4 main4 main4'
+    'main4 main5  main6'
     
     'footer footer footer'
 }
 
 .main1{
     grid-area: main1;
-     background-color: rgb(230,230,230);
+     
+   background-image: linear-gradient(to right,green,white);
  
     width:100%
     
 }
+
+
+ .main2 img{
+    width:145%;
+    height:305px;
+    margin: 5px;
+    object-fit: cover;
+    
+  }
+
+
+
+
 .main3{
   grid-area: main3;
+  background-image: linear-gradient(to left,orange,white);
+ 
    text-align: center;
   
   width:100%
   
 }
+
+}
 .main4{
   grid-area: main4;
 
-  width:99%;
+  width:96%;
   
     background-color: rgb(230,230,230);
  
     padding: 0.5em;
 
 }
-.main4 img  {
-	float: left;
-	margin: 0 10px 10px 10px;
+
+
+.main5{
+  grid-area: main5;
+
+  width:96%;
+  
+    background-color: rgb(230,230,230);
+ 
+    padding: 0.5em;
+
+
+  
+    
+
+} .main6{
+        grid-area: main6;
+	width:96%;
+  
+    background-color: rgb(230,230,230);
+ 
+    padding: 0.5em;
+
+
 
 }
+
 
 .partOne{
     text-align: center;
@@ -173,22 +213,48 @@ body{
   @media only screen and (max-width: 600px) {
     .wrapper{
       display:grid;
-      grid-template:
-      'header header '
-      ' nav nav'
-      
-      'main1 main1 '
-     
-      'text  text '
-      'main4 main4 '
-      
-      'footer footer'
-  }
-  .main3{
-    display:none;
-  }  
- 
+      'header header header'
+    ' nav nav nav '
+    
+    'main1 main2 main3'
+   
+    'text  text text'
+    'main4 main5 main6'
+    
+    'footer footer footer'
 
+  }
+.main1{
+   
+      display:none;
+    }
+
+.main2{
+   
+      display:none;
+    }
+
+  
+.main3{
+    display:none;
+  } 
+
+ .main4{
+   
+      display:none;
+    }
+     
+    
+.main5{
+   
+      display:none;
+    }
+.main6{
+   
+      display:none;
+    }
+
+ 
   .mySlides{
     display: none;
 }
